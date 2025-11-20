@@ -22,4 +22,4 @@ Si tienes problemas para instalarlo o encuentras un error:
 * Abre un **Issue** en este repositorio explicando qué falla.
 
 ## Autor
-* **Pablo Oliva** - *Creador y desarrollador del proyecto*
+* **Pablo Oliva Fernández** - *Creador y desarrollador del proyecto*
