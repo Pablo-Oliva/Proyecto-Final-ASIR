@@ -16,31 +16,9 @@ El sistema está empaquetado en contenedores Docker, lo que hace que sea muy fá
 **Restauración fácil:** Puedes elegir una copia antigua y restaurarla con pocos clics.
 **Monitorización:** Incluye gráficas (Grafana) para ver si las copias se hicieron bien o si hubo fallos.
 
-## Cómo usarlo
-
-### Instalación rápida
-Como el proyecto usa Docker, solo necesitas tener Docker y Docker Compose instalados.
-
-1.  **Descarga el proyecto:**
-    ```bash
-    git clone [https://github.com/Pablo-Oliva/Proyecto-Final-ASIR](https://github.com/Pablo-Oliva/Proyecto-Final-ASIR)
-    ```
-2.  **Arranca el sistema:**
-    ```bash
-    docker-compose up -d
-    ```
-3.  **Accede a la web:**
-    Abre tu navegador (Chrome o Firefox) y entra en `http://localhost`.
-
-### Pasos básicos
-1.  Inicia sesión con tu usuario y contraseña[cite: 41].
-2.  En el panel principal verás tus bases de datos registradas.
-3.  Ve a la sección de **Backups** para programar cada cuánto quieres que se haga una copia.
-4.  Si necesitas recuperar datos, ve a **Historial**, elige la copia y pulsa "Restaurar".
 
 ## ¿Necesitas ayuda?
 Si tienes problemas para instalarlo o encuentras un error:
-* Revisa la documentación incluida en la carpeta `docs/` del proyecto.
 * Abre un **Issue** en este repositorio explicando qué falla.
 
 ## Autor
