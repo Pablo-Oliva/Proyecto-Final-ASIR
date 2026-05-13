@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Fira+Code&display=swap');
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #0f172a; /* Azul muy oscuro casi negro */
+    color: #f1f5f9; /* Blanco grisáceo para el texto general */
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    color: #38bdf8; /* Azul cian brillante */
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Las cajas de los comandos y botones */
+div {
+    background-color: #1e293b; /* Azul pizarra oscuro */
+    border: 1px solid #334155;
+    border-radius: 12px;
+    width: 90%;
+    max-width: 800px;
+    margin: 0 auto 20px auto;
+    padding: 25px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+h2 {
+    color: #f8fafc; /* Blanco puro */
+    font-size: 1.5em;
+    margin: 0;
+    text-align: center;
+    line-height: 1.4;
+}
+
+/* Estilo para el código del comando dentro del h2 */
+h2 span.codigo {
+    font-family: 'Fira Code', monospace;
+    color: #38bdf8;
+    background-color: #0f172a;
+    padding: 2px 8px;
+    border-radius: 4px;
+}
+
+/* Las etiquetas de categoría (span) */
+span {
+    display: inline-block;
+    font-size: 0.8em;
+    font-weight: bold;
+    color: #0f172a;
+    background-color: #38bdf8; /* Fondo cian */
+    padding: 4px 12px;
+    border-radius: 20px;
+    text-transform: uppercase;
+    margin-left: 10px;
+    vertical-align: middle;
+}
+
+/* Estilo para los botones de los formularios */
+input[type="submit"], button {
+    width: 100%;
+    background-color: #38bdf8;
+    color: #0f172a;
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover, button:hover {
+    background-color: #7dd3fc;
+}
+
+/* Ajuste para el formulario de cerrar sesión (color más discreto) */
+form[action="logout.php"] input[type="submit"] {
+    background-color: #475569;
+    color: #f1f5f9;
+    margin-top: 10px;
+}
+
+form[action="logout.php"] input[type="submit"]:hover {
+    background-color: #64748b;
+}
+
+/* ==========================================
+   NUEVAS CLASES: FORMULARIOS Y CONTENEDORES
+   ========================================== */
+.contenedor-formulario {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.titulo-form {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.titulo-form-sm {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.etiqueta-form {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    text-align: left;
+}
+
+.etiqueta-form-centro {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.entrada-form {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #334155;
+    border-radius: 5px;
+    background-color: #1e293b;
+    color: #ffffff;
+    box-sizing: border-box;
+}
+
+.entrada-form-pass {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #334155;
+    border-radius: 5px;
+    background-color: #1e293b;
+    color: #ffffff;
+    box-sizing: border-box;
+}
+
+.area-form {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #334155;
+    border-radius: 5px;
+    background-color: #1e293b;
+    color: #ffffff;
+    box-sizing: border-box;
+    font-family: monospace;
+    resize: vertical;
+}
+
+.btn-principal {
+    width: 100%;
+    padding: 10px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.btn-secundario {
+    width: 100%;
+    padding: 10px;
+    background-color: #475569;
+    color: #f1f5f9;
+    font-weight: bold;
+}
+
+.contenedor-enlace {
+    box-shadow: none;
+    border: none;
+    background: transparent;
+    padding: 0;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.texto-enlace {
+    margin-bottom: 10px;
+}
+
+.form-sin-margen {
+    margin: 0;
+}
+
+.caja-centro {
+    text-align: center;
+}
+
+/* ==========================================
+   NUEVAS CLASES: DASHBOARD Y TABLAS
+   ========================================== */
+.tabla-comandos {
+    width: 100%;
+    table-layout: fixed;
+    vertical-align: middle;
+    text-align: left;
+}
+
+.celda-comando {
+    width: 50%;
+    vertical-align: top;
+}
+
+.titulo-comando {
+    word-break: break-all;
+    overflow-wrap: break-word;
+    text-align: left;
+}
+
+.caja-script {
+    background-color: #dedede;
+    color: #000000;
+    border: 1px solid #aaaaaa;
+    padding: 10px;
+    display: block;
+    word-break: break-all;
+    overflow-wrap: break-word;
+}
+
+.btn-copiar {
+    float: right;
+    cursor: pointer;
+    background-color: #ffffff;
+    color: #000000;
+    padding: 2px 5px;
+    border: 1px solid #000000;
+    font-size: 0.9em;
+    text-transform: none;
+    font-style: normal;
+    margin-left: 10px;
+}
+
+.texto-script {
+    background-color: transparent;
+    color: #000000;
+    padding: 0;
+    text-transform: none;
+    font-style: normal;
+}
+
+.celda-categoria {
+    width: 20%;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.celda-acciones {
+    width: 15%;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.btn-borrar {
+    background-color: #ff0000;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.footer-ip {
+    margin-top: 30px;
+    border-top: 1px solid #334155;
+    padding-top: 15px;
+}
+
+.texto-ip {
+    color: #00d1ff;
+    font-weight: bold;
+    font-size: 0.9em;
+    text-align: center;
+}
